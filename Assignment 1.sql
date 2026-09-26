@@ -41,7 +41,77 @@ VALUES
 	SELECT *
 	FROM Customers;
 
-	SELECT 
+	SELECT USER_NAME, Country, Amt_Spend
+	FROM Customers
+	;
+
+	SELECT USER_NAME, Age, Amt_Spend
+	FROM Customers
+	;
+
+	SELECT *
+	FROM Customers
+	WHERE Amt_Spend >50000
+	;
+
+	SELECT *
+	FROM Customers
+	WHERE Age <30
+	;
+
+	SELECT *
+	FROM Customers
+	WHERE Country = 'India'
+	;
+
+	SELECT *
+	FROM Customers
+	WHERE Amt_Spend < 20000
+	;
+
+	SELECT *
+	FROM Customers
+	WHERE Age <30 and Amt_Spend >30000
+	;
+
+	SELECT *
+	FROM Customers
+	WHERE Country = 'India' and Amt_Spend <40000
+	;
+
+	SELECT *
+	FROM Customers
+	WHERE Country = 'India' OR Country = 'USA'
+	;
+
+	SELECT *
+	FROM Customers
+	WHERE Country = 'India' OR Country = 'USA' AND Amt_Spend >50000
+	;
+
+	SELECT *
+	FROM Customers
+	WHERE NOT Country = 'India'
+	;
+
+	SELECT *
+	FROM Customers
+	ORDER BY Amt_Spend ASC
+	;
+
+	SELECT *
+	FROM Customers
+	ORDER BY Age ASC
+	;
+
+	SELECT *
+	FROM Customers
+	WHERE Age BETWEEN 25 AND 40 AND Amt_Spend < 30000
+	AND Country = 'India' OR Country = 'USA'
+	ORDER BY Amt_Spend DESC
+	;
+	
+
 
 
 
